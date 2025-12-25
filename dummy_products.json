@@ -1,0 +1,121 @@
+[
+  {
+    "id": "prod_1",
+    "name": "Notion",
+    "slug": "notion",
+    "description": "Notion is an all-in-one workspace that combines notes, tasks, databases, and collaboration tools into a single flexible platform.",
+    "rating": 4.8,
+    "pros": [
+      "Highly customizable",
+      "Great for teams and individuals",
+      "Powerful databases"
+    ],
+    "cons": [
+      "Can feel overwhelming for beginners",
+      "Offline mode is limited"
+    ],
+    "websiteUrl": "https://www.notion.so",
+    "category": {
+      "id": "cat_productivity",
+      "name": "Productivity",
+      "slug": "productivity"
+    },
+    "logo": "/images/notion.png",
+    "publishedAt": "2024-11-02"
+  },
+  {
+    "id": "prod_2",
+    "name": "Figma",
+    "slug": "figma",
+    "description": "Figma is a collaborative interface design tool that allows teams to design, prototype, and collaborate in real time.",
+    "rating": 4.7,
+    "pros": [
+      "Real-time collaboration",
+      "Runs in the browser",
+      "Strong plugin ecosystem"
+    ],
+    "cons": [
+      "Performance issues on large files",
+      "Limited offline support"
+    ],
+    "websiteUrl": "https://www.figma.com",
+    "category": {
+      "id": "cat_design",
+      "name": "Design",
+      "slug": "design"
+    },
+    "logo": "/images/figma.png",
+    "publishedAt": "2024-10-18"
+  },
+  {
+    "id": "prod_3",
+    "name": "VS Code",
+    "slug": "vs-code",
+    "description": "Visual Studio Code is a lightweight but powerful code editor with extensive extensions for modern development.",
+    "rating": 4.9,
+    "pros": [
+      "Huge extension marketplace",
+      "Fast and lightweight",
+      "Excellent language support"
+    ],
+    "cons": [
+      "Can become heavy with many extensions"
+    ],
+    "websiteUrl": "https://code.visualstudio.com",
+    "category": {
+      "id": "cat_devtools",
+      "name": "Developer Tools",
+      "slug": "developer-tools"
+    },
+    "logo": "/images/vscode.png",
+    "publishedAt": "2024-09-30"
+  },
+  {
+    "id": "prod_4",
+    "name": "Slack",
+    "slug": "slack",
+    "description": "Slack is a messaging platform designed for teams to communicate efficiently through channels, messages, and integrations.",
+    "rating": 4.2,
+    "pros": [
+      "Easy team communication",
+      "Strong integrations",
+      "Good search"
+    ],
+    "cons": [
+      "Can become noisy",
+      "Free plan is limited"
+    ],
+    "websiteUrl": "https://slack.com",
+    "category": {
+      "id": "cat_collaboration",
+      "name": "Collaboration",
+      "slug": "collaboration"
+    },
+    "logo": "/images/slack.png",
+    "publishedAt": "2024-08-22"
+  },
+  {
+    "id": "prod_5",
+    "name": "Linear",
+    "slug": "linear",
+    "description": "Linear is a fast, opinionated issue tracking tool built for modern software teams.",
+    "rating": 4.6,
+    "pros": [
+      "Very fast UI",
+      "Excellent UX",
+      "Great keyboard shortcuts"
+    ],
+    "cons": [
+      "Less customizable than competitors",
+      "Best suited for software teams"
+    ],
+    "websiteUrl": "https://linear.app",
+    "category": {
+      "id": "cat_productivity",
+      "name": "Productivity",
+      "slug": "productivity"
+    },
+    "logo": "/images/linear.png",
+    "publishedAt": "2024-11-10"
+  }
+]
