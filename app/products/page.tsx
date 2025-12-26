@@ -31,8 +31,8 @@ export default function Products() {
                 <CardTitle className="font-bold">{product.name}</CardTitle>
                 <CardDescription>
                   <RouterButton
-                    href={`/categories/${product.productCategory.slug}`}
-                    buttonText={product.productCategory.name}
+                    href={`/categories/${product.category.slug}`}
+                    buttonText={product.category.name}
                   />
                 </CardDescription>
               </CardHeader>
