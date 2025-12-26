@@ -1,30 +1,17 @@
-"use client";
+import { fetchCategories } from "@/lib/mockApi";
+import CategoriesClientPage from "./categoriesClient";
+import { queryClient } from "@/lib/queryClient";
+import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import { useCategories } from "@/hooks/useCategories";
-import Link from "next/link";
+export default async function Categories() {
+  await queryClient.prefetchQuery({
+    queryKey: ["categories"],
+    queryFn: fetchCategories,
+  });
 
-export default function Categories() {
-  const { data, isLoading, isError } = useCategories();
-  console.log("data", data);
-
-  if (isLoading) return <p>Loading products...</p>;
-  if (isError) return <p>Something went wrong</p>;
   return (
-    <>
-      <h1 className="text-3xl font-bold mb-4 text-center">All Categories</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-5 mr-5">
-        {data?.map((category) => (
-          <Link key={category.slug} href={`/categories/${category.slug}`}>
-            <Card>
-              <CardHeader>
-                <CardTitle className="font-bold">{category.name}</CardTitle>
-              </CardHeader>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </>
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <CategoriesClientPage />;
+    </HydrationBoundary>
   );
 }
