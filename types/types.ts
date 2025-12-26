@@ -2,7 +2,7 @@ export interface IProduct {
   name: string;
   slug: string;
   description: string;
-  rate: number;
+  rating: number;
   pros: string[];
   cons: string[];
   websiteUrl?: string;
