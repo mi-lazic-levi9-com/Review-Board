@@ -6,7 +6,7 @@ export interface IProduct {
   pros: string[];
   cons: string[];
   websiteUrl?: string;
-  productCategory: {
+  category: {
     id: string;
     name: string;
     slug: string;

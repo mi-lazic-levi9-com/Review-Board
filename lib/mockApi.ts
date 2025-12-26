@@ -9,9 +9,11 @@ export async function fetchProducts(): Promise<IProduct[]> {
  query AllProducts {
   allProducts {
     name
+    description
     slug
-    rate
-    productCategory {
+    websiteUrl
+    rating
+    category {
       name
       slug
     }
